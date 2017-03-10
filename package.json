@@ -1,6 +1,6 @@
 {
   "name": "codemeli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "National number validator for Iranians",
   "main": "lib/codemeli.js",
   "scripts": {

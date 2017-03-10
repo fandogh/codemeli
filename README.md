@@ -1,4 +1,4 @@
-# codemeli
+# CodeMeli
 National number validator for Iranians.
 
 **Node.js**
@@ -14,7 +14,7 @@ yarn add codemeli
 
 Add this tag:
 ```html
-    <script src="https://unpkg.com/codemeli/lib/codemeli.js"></script> 
+<script src="https://unpkg.com/codemeli/lib/codemeli.js"></script> 
 ```
 
 ## API
@@ -54,7 +54,9 @@ console.log(national_number_obj);
 */
 ``` 
 
-# LICENSE
-MIT License Copyright (c) 2017 Fandogh - Pooya Parsa <pooya@pi0.ir>.   
-Validation algorithm extracted from an article from [aliarash.com](http://www.aliarash.com/article/codemeli/codemeli.htm)
-So original credits backs to [Ali Arash](mailto:admin@aliarash.com)
+## Algorithm
+Parity checking algorithm extracted from an article from [aliarash.com](http://www.aliarash.com/article/codemeli/codemeli.htm)
+(Also available [here](https://fandogh.github.io/codemeli/codemeli.html))
+
+## LICENSE
+MIT License Copyright (c) 2017 Fandogh - [Pooya Parsa](mailto:pooya@pi0.ir) - [Ali Arash](mailto:admin@aliarash.com).
