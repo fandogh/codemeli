@@ -16,7 +16,7 @@ npm install --save codemeli
 **Browser**
 
 ```html
-<script src="https://unpkg.com/codemeli@latest" type='text/javascript'></script> 
+<script src="https://unpkg.com/codemeli@1.0.1" type='text/javascript'></script> 
 ```
 
 ## API
