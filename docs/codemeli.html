@@ -1,0 +1,185 @@
+<html dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Language" content="fa">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>تشخیص صحت کد ملی </title>
+    <meta name="keywords" content="تشخیص صحت کد ملی, کد ملی , الگوریتم تشخیص ">
+    <meta name="description" content="تشخیص صحت کد ملی- کد ملی - الگوریتم تشخیص ">
+</head>
+
+<body>
+
+<div align="center">
+
+    <table border="1" DIR=rtl cellpadding="0" cellspacing="1"
+           style="border-collapse: collapse; text-align: justify; direction: rtl; text-indent: 5; margin-left: 15; margin-right: 12"
+           width="750" dir="rtl" id="table5">
+        <tr>
+            <td bgcolor="#3973AC" height="52">
+                <p style="text-align: center"><font color="#FFFFFF"><b><span
+                        lang="fa">تشخیص صحت کد ملی</span></b></font></td>
+        </tr>
+        <tr>
+            <td height="52">
+      <span lang="fa">امروزه در اکثر نرم افزارهای تولیدی نیاز به استفاده از کد ملی
+به عنوان یک مشخصه منحصر به فرد برای اطلاعات فردی می باشد.</span>
+                <p><span lang="fa">از طرفی متاسفانه در حال حاضر هیچ الگوریتمی برای تشخیص صحت کد
+ورودی در اختیار برنامه نویسان وجود ندارد.</span></p>
+                <p><span lang="fa">اخیرا با توجه به نیاز خودم به کنترل صحت کد ورودی الگوریتم
+مربوط به کنترل صحت کد ملی را بدست آوردم و چون مطمئن هستم افراد زیادی هم همین نیاز
+را دارند روال انجام کار را در این مقال توضیح می دهم</span></p>
+                <p>کد ملی شماره ای است 10 رقمی که از سمت چپ سه رقم کد شهرستان محل صدور شناسنامه ،
+                    شش رقم بعدی کد منحصر به فرد برای فرد دارنده شناسنامه در شهرستان محل صدرو و رقم آخر آن هم یک رقم
+                    کنترل است که
+                    از روی 9 رقم سمت چپ بدست می آید. برای بررسی کنترل کد کافی است مجدد از روی 9 رقم
+                    سمت چپ رقم کنترل را محاسبه کنیم</p>
+                <p><span lang="fa">از آنجایی که درسیستم کد ملی معمولا قبل از کد&nbsp; تعدادی صفر
+وجود دارد.(رقم اول و رقم دوم از سمت چپ کد ملی ممکن است صفر باشد) و در بسیاری از
+موارد ممکن است کاربر این صفرها را وارد نکرده باشد و یا نرم افزار این صفرها را
+ذخیره نکرده باشد بهتر است قبل از هر کاری در صورتی که طول کد بزرگتر مساوی 8 و
+کمتر از 10 باشد&nbsp; به تعداد لازم (یک تا دو تا صفر) به سمت چپ عدد اضافه کنید.
+ساختار کد ملی در زیر نشان داده شده است</span></p>
+                <div align="center">
+                    <table border="1" width="300" dir="rtl" style="border-collapse: collapse" bordercolor="#808080">
+                        <tr>
+                            <td colspan="11" align="center" style="text-align: center">
+                                <p style="text-align: center">ساختار کد ملی</td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="text-align: center">ارقام کد</td>
+                            <td align="center" style="text-align: center">رقم کنترل</td>
+                            <td colspan="9" align="center" style="text-align: center">9 رقم سمت چپ کد ملی</td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="text-align: center">موقعیت</td>
+                            <td align="center" style="text-align: center">
+                                <p style="text-align: center">1</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">2</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">3</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">4</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">5</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">6</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">7</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">8</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">9</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">10</td>
+                        </tr>
+                        <caption>&nbsp;</caption>
+                    </table>
+                </div>
+                <p>1- برای محاسبه رقم کنترل از روی سایر ارقام ، هر رقم را در موقعیت آن ضرب کرده
+                    و حاصل را با هم جمع می کنیم.</p>
+                <p>2- مجموع بدست آمده از مرحله یک را بر 11 تقسیم می کنیم</p>
+                <p>3- اگر باقیمانده کمتر از 2 باشد ، رقم کنترل باید برابر باقیمانده باشد در غیر
+                    اینصورت رقم کنترل باید برابر یازده منهای باقیمانده باشد</p>
+                <p>مثال : آیا کد 7731689951 یک کد ملی معتبر است؟</p>
+                <p>برای این منظور کد</p>
+                <div align="center">
+                    <table border="1" width="427" dir="rtl" style="border-collapse: collapse" bordercolor="#808080">
+                        <tr>
+                            <td colspan="11" align="center" style="text-align: center">ساختار کد ملی</td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="text-align: center">ساختار کد</td>
+                            <td align="center" style="text-align: center">رقم کنترل</td>
+                            <td colspan="9" align="center" style="text-align: center">9 رقم سمت چپ کد ملی</td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="text-align: center">ارقام کد</td>
+                            <td align="center" style="text-align: center">1</td>
+                            <td align="center" style="text-align: center">5</td>
+                            <td align="center" style="text-align: center">9</td>
+                            <td align="center" style="text-align: center">9</td>
+                            <td align="center" style="text-align: center">8</td>
+                            <td align="center" style="text-align: center">6</td>
+                            <td align="center" style="text-align: center">1</td>
+                            <td align="center" style="text-align: center">3</td>
+                            <td align="center" style="text-align: center">7</td>
+                            <td align="center" style="text-align: center">7</td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="text-align: center">موقعیت</td>
+                            <td align="center" style="text-align: center">1</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">2</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">3</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">4</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">5</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">6</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">7</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">8</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">9</td>
+                            <td align="center" style="text-align: center" bgcolor="#9999FF">10</td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="text-align: center">محاسبه حاصل ضرب</td>
+                            <td align="center" style="text-align: center">&nbsp;</td>
+                            <td align="center" style="text-align: center">10</td>
+                            <td align="center" style="text-align: center">27</td>
+                            <td align="center" style="text-align: center">36</td>
+                            <td align="center" style="text-align: center">40</td>
+                            <td align="center" style="text-align: center">36</td>
+                            <td align="center" style="text-align: center">7</td>
+                            <td align="center" style="text-align: center">24</td>
+                            <td align="center" style="text-align: center">63</td>
+                            <td align="center" style="text-align: center">70</td>
+                        </tr>
+                        <caption>&nbsp;</caption>
+                    </table>
+                    <p align="right">حاصل<span lang="en-us"> </span>جمع ضرب ارقام 2 الی 10 را در موقعیت آنها محاسبه می
+                        کنیم</p>
+                    <p align="left" dir="ltr">7*10+7*9+3*8+1*7+6*6+8*5+9*4+9*3+5*2=313</p>
+                    <p align="left" dir="ltr">313<font face="Times New Roman"><span lang="en">÷</span>11=28
+                        و <span lang="en-us">R=5</span></font></p>
+                    <p align="right">چون باقیمانده برابر 5 و بزرگتر مساوی 2 است پس باید رقم
+                        کنترل این کد برابر 6 ( یازده منهای 5 برابر 6
+                        )باشد. </p>
+                    <p align="right">با دقت در کد متوجه می شویم که رقم کنترل ورودی برابر 1 است
+                        پس کد مورد نظر به عنوان یک کد معتبر قابل قبول نیست<span lang="en-us">.</span></p>
+                    <p align="right"><font color="#FF0000">برای بررسی صحت کد ملی ، کد ملی مورد
+                        نظرتان را در زیر وارد کرده و بر روی دکمه کنترل کد ملی کلیک کنید.</font></p>
+                    <table border="1" width="300" dir="rtl" style="border-collapse: collapse" bordercolor="#808080">
+                        <tr>
+                            <td colspan="2" align="center" style="text-align: center" bgcolor="#3973AC" height="21">
+                                <b><font color="#FFFFFF">کنترل کد
+                                    ملی</font></b></td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="text-align: center" width="160" height="30" bgcolor="#ECE9D8">کد
+                                ملی
+                                مورد نظر را وارد کنید
+                            </td>
+                            <td align="center" style="text-align: center" width="132" height="30" bgcolor="#ECE9D8">
+                                <input type="text" name="CodeM" id="CodeM" size="15" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td align="center" style="text-align: center" width="419" colspan="2" bgcolor="#ECE9D8">
+                                <input type="button" value="کنترل کد ملی" name="B3" onclick="check();">
+                            </td>
+                        </tr>
+                        <caption>&nbsp;</caption>
+                    </table>
+
+                    <p align="right">واژگان:&nbsp; <span lang="fa">تشخیص صحت کد ملی- کد ملی -
+	الگوریتم تشخیص -</span></p>
+                    <p><font face="Tahoma" color="#000066" size="1">علي آرش&nbsp;خرداد 138<span
+                            lang="en-us">7</span><br>
+                        Email: <font color="#ff0000"><a href="mailto:admin@are.ir">
+                            admin@are.ir</a><span lang="en-us"> ,
+          <a href="mailto:admin@aliarash.com">admin@aliarash.com</a></span></font><br>
+                        &nbsp;</font></p>
+                    <a href="http://www.aliarash.com/article/codemeli/codemeli.htm">نسخه اصلی</a>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<p>&nbsp;</p>
+<div align="center">
+    <p align="right">&nbsp;</p>
+    <p>&nbsp;</div>
+
+</body>
+
+</html>

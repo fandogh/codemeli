@@ -1,0 +1,30 @@
+{
+  "name": "codemeli",
+  "version": "0.0.0",
+  "description": "National number validator for Iranians",
+  "main": "lib/codemeli.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fandogh/codemeli.git"
+  },
+  "keywords": [
+    "Code",
+    "Melli",
+    "NationalNumber",
+    "Iran",
+    "Iranian",
+    "Validator"
+  ],
+  "author": "Pooya Parsa <pooya@pi0.ir>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fandogh/codemeli/issues"
+  },
+  "homepage": "https://github.com/fandogh/codemeli#readme",
+  "devDependencies": {
+    "jest": "^19.0.2"
+  }
+}
