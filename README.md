@@ -1,4 +1,9 @@
 # CodeMeli
+[![CircleCI](https://img.shields.io/circleci/project/github/fandogh/codemeli.svg?style=flat-square)](https://circleci.com/gh/fandogh/codemeli)
+[![npm](https://img.shields.io/npm/v/codemeli.svg?style=flat-square)](https://www.npmjs.com/package/codemeli)
+[![npm](https://img.shields.io/npm/dt/codemeli.svg?style=flat-square)](https://www.npmjs.com/package/codemeli)
+
+
 National number validator for Iranians.
 
 **Node.js**
