@@ -1,7 +1,7 @@
 {
   "name": "codemeli",
   "version": "1.0.2",
-  "description": "National number validator for Iranians",
+  "description": "Iranians national number (NID,SSN) parser & validator",
   "main": "lib/codemeli.js",
   "scripts": {
     "test": "jest"
@@ -11,12 +11,15 @@
     "url": "git+https://github.com/fandogh/codemeli.git"
   },
   "keywords": [
-    "Code",
+    "Code Melli",
     "Melli",
-    "NationalNumber",
+    "Meli",
+    "National Number",
     "Iran",
     "Iranian",
-    "Validator"
+    "Persian",
+    "NID",
+    "SSN"
   ],
   "author": "Pooya Parsa <pooya@pi0.ir>",
   "license": "MIT",
