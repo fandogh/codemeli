@@ -80,8 +80,9 @@ Please check [lib/city_db.js](lib/citiy_db.js) and [docs/missing_cities.txt](doc
 
 ## Read More
 - [Wikipedia](https://en.wikipedia.org/wiki/Iranian_national_identity_card)
+- [Wikipedia + Algorithm (Persian)](https://en.wikipedia.org/wiki/Iranian_national_identity_card)
 - [IR Family](http://irfamily.com/iranian-national-identity-card/)
-- [History of iranian identify cards (Persian)](http://www.farsnews.com/newstext.php?nn=13941107000664)
+- [History of iranian id    entify cards (Persian)](http://www.farsnews.com/newstext.php?nn=13941107000664)
 
 ## Related projects
 - [rghorbani/node-iranian-ssn](https://github.com/rghorbani/node-iranian-ssn)
