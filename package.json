@@ -1,6 +1,6 @@
 {
   "name": "codemeli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Iranians national number (NID,SSN) parser & validator",
   "main": "lib/codemeli.js",
   "scripts": {
