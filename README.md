@@ -6,6 +6,8 @@
 
 **Node.js**
 
+# City codes
+
 ```bash
 # Using Yarn
 yarn add codemeli
@@ -76,16 +78,17 @@ Here is the list of discovered references:
 - [it-office.ir](http://www.it-office.ir/index.php?option=com_content&view=article&id=133&Itemid=794)
 - [codemelli.blogfa.com](http://codemelli.blogfa.com/post-2.aspx)
  
-Please check [lib/city_db.js](lib/citiy_db.js) and [docs/missing_cities.txt](docs/missing_cities.txt) for more info.
+Please check [docs/city_codes.json](docs/citiy_codes.json) and [docs/missing_cities.txt](docs/missing_cities.txt) for more info.
 
 ## Read More
 - [Wikipedia](https://en.wikipedia.org/wiki/Iranian_national_identity_card)
-- [Wikipedia + Algorithm (Persian)](https://en.wikipedia.org/wiki/Iranian_national_identity_card)
+- [Wikipedia + Algorithm (Persian)](https://fa.wikipedia.org/wiki/Iranian_national_identity_card)
 - [IR Family](http://irfamily.com/iranian-national-identity-card/)
-- [History of iranian id    entify cards (Persian)](http://www.farsnews.com/newstext.php?nn=13941107000664)
+- [History of iranian identify cards (Persian)](http://www.farsnews.com/newstext.php?nn=13941107000664)
 
 ## Related projects
 - [rghorbani/node-iranian-ssn](https://github.com/rghorbani/node-iranian-ssn)
+- [rghorbani/iranian-ssn-gem](https://github.com/rghorbani/iranian-ssn-gem)
 
 ## LICENSE
 MIT License Copyright (c) 2017 Fandogh - [Pooya Parsa](mailto:pooya@pi0.ir)
