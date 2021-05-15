@@ -29,6 +29,6 @@
   "homepage": "https://github.com/fandogh/codemeli#readme",
   "devDependencies": {
     "jest": "^23.6.0",
-    "xlsx": "^0.9.1"
+    "xlsx": "^0.17.0"
   }
 }
